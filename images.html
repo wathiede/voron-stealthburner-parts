@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Photo album - images</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+  </head>
+
+  <body>
+
+    <header>
+      <a href="index.html">
+        <h1>Photo album</h1>
+      </a>
+    </header>
+    
+    <!--
+      Breadcrumbs of parent albums
+    -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a class="breadcrumb-item" href="images.html">images</a>
+      </nav>
+    
+    <!--
+      Nested albums
+    -->
+    <ul id="galleries">
+     <li>
+       <a href="images-Clockwork2.html">
+         <h3>Clockwork2</h3>
+         <div class="meta">
+           2 albums, 18 photos<br />
+           18 Dec 2025 - 18 Dec 2025
+         </div>
+         <ul class="grid"><li><img src="media/thumbs/images/Clockwork2/chain_anchor_2hole.png" /></li><li><img src="media/thumbs/images/Clockwork2/%5Ba%5D_pcb_spacer.png" /></li><li><img src="media/thumbs/images/Clockwork2/cable_door_for_pcb.png" /></li><li><img src="media/thumbs/images/Clockwork2/chain_anchor_2hole_SW.png" /></li>     </ul>
+       </a>
+     </li>
+     <li>
+       <a href="images-Stealthburner.html">
+         <h3>Stealthburner</h3>
+         <div class="meta">
+           2 albums, 32 photos<br />
+           18 Dec 2025 - 18 Dec 2025
+         </div>
+         <ul class="grid"><li><img src="media/thumbs/images/Stealthburner/%5Bc%5D_stealthburner_LED_diffuser.png" /></li><li><img src="media/thumbs/images/Stealthburner/%5Ba%5D_stealthburner_main_body.png" /></li><li><img src="media/thumbs/images/Stealthburner/%5Bo%5D_stealthburner_LED_carrier.png" /></li><li><img src="media/thumbs/images/Stealthburner/%5Bo%5D_stealthburner_LED_diffuser_mask.png" /></li>     </ul>
+       </a>
+     </li>
+     <li>
+       <a href="images-Tools.html">
+         <h3>Tools</h3>
+         <div class="meta">
+           2 photos<br />
+           18 Dec 2025 - 18 Dec 2025
+         </div>
+         <ul class="grid"><li><img src="media/thumbs/images/Tools/SB_5015_Cutting_Tool_A.png" /></li><li><img src="media/thumbs/images/Tools/SB_5015_Cutting_Tool_B.png" /></li><li><img src="public/missing.png" /></li><li><img src="public/missing.png" /></li>     </ul>
+       </a>
+     </li>
+    </ul>
+    
+    <!--
+      Render all thumbnails
+    -->
+    <ul id="media">
+    </ul>
+    
+    <!--
+      Pagination
+    -->
+    
+    <!--
+      Zip file link
+    -->
+    
+    
+    <!--
+      Optional footer
+    -->
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>
