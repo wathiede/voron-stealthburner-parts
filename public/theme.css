@@ -6,6 +6,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background-color: #2c2f33;
 }
 body {
   border-top: 5px solid #33609c;
@@ -22,16 +23,16 @@ header {
   margin-bottom: 0.5em;
 }
 h1 {
-  color: #33609c;
+  color: #cc000e;
   display: inline-block;
   font-weight: bold;
 }
 h2 {
-  color: #666;
+  color: #cc000e;
   display: inline-block;
 }
 h3 {
-  color: #33609c;
+  color: #cc000e;
   margin-bottom: 0.1em;
   font-size: 1.3em;
 }
@@ -39,6 +40,7 @@ a {
   text-decoration: none;
 }
 nav.breadcrumbs {
+  color: #cc000e;
   border-top: 1px solid #bbb;
   border-bottom: 1px solid #bbb;
   margin-bottom: 2.3em;
@@ -48,19 +50,18 @@ nav.breadcrumbs li {
   display: inline-block;
 }
 nav.breadcrumbs a {
-  color: #666;
   display: inline-block;
   padding: 0.4em 1em;
   text-decoration: none;
-  background-color: #33609c;
-  color: #fff;
+  color: #e6e1e8;
+  background-color: #cc000e;
   font-weight: bold;
 }
 nav.breadcrumbs li.active {
   background-color: #bbb;
 }
 nav.breadcrumbs li.active a {
-  color: #fff;
+  color: #cc000e;
   font-weight: bold;
 }
 nav.breadcrumbs li:not(.active):hover {
@@ -73,16 +74,17 @@ footer {
   margin-top: 2em;
 }
 footer a {
-  color: #000;
+  color: #cc000e;
 }
 #galleries a {
   display: inline-block;
 }
+figcaption.meta,
 #galleries .meta {
   font-size: 0.9em;
   width: 100%;
   margin: 0.5em 0;
-  color: #666;
+  color: #e6e1e8;
   line-height: 1.2em;
 }
 #galleries > li {
@@ -121,7 +123,7 @@ footer a {
   width: 48px;
 }
 nav.pagination {
-  color: #666;
+  color: #cc000e;
   display: inline-block;
   margin-top: 1em;
   padding: 0em 0em 0.5em 0em;
@@ -133,7 +135,7 @@ nav.pagination .page.current {
   font-weight: bold;
 }
 nav.pagination a {
-  color: #666;
+  color: #cc000e;
 }
 #zip {
   color: #666;
@@ -141,4 +143,11 @@ nav.pagination a {
 }
 #zip a {
   color: #3399ff;
+}
+figure {
+  width: 120px;
+}
+figcaption {
+  font-size: 0.8em;
+  overflow-wrap: break-word;
 }
